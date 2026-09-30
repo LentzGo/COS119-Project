@@ -1,20 +1,30 @@
 #include <iostream>
+
+#include "Game.h"
 #include "Platform.h"
 
 int main()
 {
-    PlatformInfo platform(
+    // This is intentionally invalid:
+    // PS5 does not belong to the Xbox platform family.
+    PlatformInfo invalidPlatform(
         Platform::Xbox,
-        PlatformVersion::Xbox360
+        PlatformVersion::PS5
     );
 
-    if (!platform.isValid())
+    if (!invalidPlatform.isValid())
     {
-        std::cout << "Invalid platform combination.\n";
-        return 1;
+        std::cout << "Invalid platform combination detected.\n";
+        return 0;
     }
 
-    std::cout << "Platform is valid.\n";
+    Game game(
+        "Invalid Test Game",
+        invalidPlatform,
+        false
+    );
+
+    game.display();
 
     return 0;
 }

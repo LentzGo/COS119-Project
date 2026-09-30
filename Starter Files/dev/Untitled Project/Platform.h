@@ -67,4 +67,5 @@ public:
 	Platform getFamily() const;
 	PlatformVersion getVersion() const;
 
+	void display() const;
 };
