@@ -55,21 +55,16 @@ class PlatformInfo
 private:
 	Platform family;
 	PlatformVersion version;
+	bool valid;
+
+	bool isValidPlatform() const;
 
 public:
-	PlatformInfo(Platform family, PlatformVersion version)
-		: family(family), version(version)
-	{
-	};
+	PlatformInfo(Platform family, PlatformVersion version);
 
-	Platform getFamily() const
-	{
-		return family;
-	}
+	bool isValid() const;
 
-	PlatformVersion getVersion() const
-	{
-		return version;
-	}
+	Platform getFamily() const;
+	PlatformVersion getVersion() const;
 
 };

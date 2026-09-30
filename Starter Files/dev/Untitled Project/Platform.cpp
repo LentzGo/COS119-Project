@@ -1,8 +1,20 @@
 #include "Platform.h"
 
+
 //Implent Validation to protect against Platform and PlatformVersion mismatch
 
-bool isValidPlatform(Platform family, PlatformVersion version)
+PlatformInfo::PlatformInfo(
+	Platform family,
+	PlatformVersion version
+)
+	: family(family),
+	version(version),
+	valid(false)
+{
+	valid = isValidPlatform();
+}
+
+bool PlatformInfo::isValidPlatform() const
 {
 	switch (family)
 	{
@@ -49,4 +61,19 @@ bool isValidPlatform(Platform family, PlatformVersion version)
 	}
 
 	return false;
+}
+
+bool PlatformInfo::isValid() const
+{
+	return valid;
+}
+
+Platform PlatformInfo::getFamily() const
+{
+	return family;
+}
+
+PlatformVersion PlatformInfo::getVersion() const
+{
+	return version;
 }

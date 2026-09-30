@@ -26,7 +26,7 @@ Setting the Foundation:
 - Sorting Core Classes from Extra Classes
 - Naming Project
 🌵 Challenges - What problems did I have & how I'm addressing them
-<br>
+- I didn't initially think about how specific I would need to be with video game platform options. - I addressed this by breaking all available options into family and building a switch loop that helps protect against mismatching.
 🏆 Accomplishments - What is something I "leveled up" on this week
 <br>
 🔮 Next Steps - What I plan to prioritize and do next

@@ -1,9 +1,20 @@
-// Untitled Project.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include "Platform.h"
 
 int main()
 {
-    std::cout << "Well Hello Little Branch! :) ";
+    PlatformInfo platform(
+        Platform::Xbox,
+        PlatformVersion::Xbox360
+    );
+
+    if (!platform.isValid())
+    {
+        std::cout << "Invalid platform combination.\n";
+        return 1;
+    }
+
+    std::cout << "Platform is valid.\n";
+
+    return 0;
 }
