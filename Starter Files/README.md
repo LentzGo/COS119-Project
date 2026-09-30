@@ -27,6 +27,9 @@ Setting the Foundation:
 - Naming Project
 🌵 Challenges - What problems did I have & how I'm addressing them
 - I didn't initially think about how specific I would need to be with video game platform options. - I addressed this by breaking all available options into family and building a switch loop that helps protect against mismatching.
+- Unsure how I will ultimately store, retrieve, and/or display information for duplicates of games (games on multiple platforms). - I am considering the following: 
+	- A gameCopy class
+	- A function that pulls based on Title but displays all platforms
 🏆 Accomplishments - What is something I "leveled up" on this week
 <br>
 🔮 Next Steps - What I plan to prioritize and do next
