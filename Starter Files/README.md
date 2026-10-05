@@ -1,4 +1,7 @@
-# Project & Portfolio 1
+COS1109-O
+Project & Portfolio 1
+October 04, 2026
+
 
 ### Ariel Lentz
 
@@ -26,14 +29,14 @@ Setting the Foundation:
 - Sorting Core Classes from Extra Classes
 - Naming Project
 🌵 Challenges - What problems did I have & how I'm addressing them
-- I didn't initially think about how specific I would need to be with video game platform options. - I addressed this by breaking all available options into family and building a switch loop that helps protect against mismatching.
+- I didn't initially think about how specific I would need to be with video game platform options. - I addressed this by breaking all available options into family and building a switch that helps protect against mismatching.
 - Unsure how I will ultimately store, retrieve, and/or display information for duplicates of games (games on multiple platforms). - I am considering the following: 
-	- A gameCopy class
+	- A game copy class
 	- A function that pulls based on Title but displays all platforms
 🏆 Accomplishments - What is something I "leveled up" on this week
-<br>
+This week I am feeling really good about my project planning and time management. So far I feel like I have a good handle on what I am building and that I will be able to complete the project in the allocated time. 
 🔮 Next Steps - What I plan to prioritize and do next
-
+With my base plan and core features in place my current focus is cleaning up my core classes and building my menu class to ensure the primary add and remove functions work correctly. This will allow me a strong foundation to expand upon as I continue to debug and add more features.
 ### Week 2
 
 My next stand up will go here...
